@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><link rel="stylesheet" type="text/css" href="../css/style.css"/>
+<link rel="stylesheet" type="text/css" href="../css/slider.css"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<script type="text/javascript" src="../java script/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="../java script/js_slider.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Đóng góp ý kiến</title>
+</head>
+
+
+
+<body>
+	<div id="menu_top">
+    	<ul>
+        	<li><a href="Index.html" title="Trang chủ" target="_blank">Trang chủ</a></li>
+            <li><a href="địa điểm du lịch.html" title="Địa điểm du lịch" target="_blank">Địa điểm du lịch</a></li>
+            <li><a href="ẩm thực.html" title="Ẩm thực" target="_blank">Ẩm thực</a></li>
+           
+            <li><a href="Đóng góp ý kiến.html" title="Đóng góp ý kiến" target="_blank" class="active">Đóng góp ý kiến</a></li>
+            <li><a href="#">
+            <div id="clock">
+			<script language="javascript">
+    			var now = new Date();
+				localtime = now.toString();
+				function Inngaygio()
+				{
+				var now = new Date();
+				Giờ = now.getHours();
+				Phút = now.getMinutes();
+				Giây = now.getSeconds();
+				theDiv = document.getElementById("clock");
+				theDiv.innerHTML = Giờ + ":" + Phút + ":" + Giây;
+				window.setInterval(Inngaygio,1000);	
+			}
+			Inngaygio();
+    		</script>
+            </div>
+            </a>
+            </li>
+        </ul>
+    </div>
+    
+   <div class="slideshow-container">
+        <div class="mySlides fade">
+        
+          <img src="../images/Slide/cầu Tràng Tiền về đêm.jpg" alt="Cầu Tràng Tiền về đêm" >
+          </div>
+        <div class="mySlides fade">
+        
+          <img src="../images/Slide/chè bột lọc chè khoai tía.jpg" alt="Chè bột lọc" >
+        </div>
+        <div class="mySlides fade">
+        
+          <img src="../images/Slide/đại nội về đêm 2.jpg" alt="Đại nội về đêm" >
+        </div>
+        <div class="mySlides fade">
+        
+          <img src="../images/Slide/che sen.jpg" alt="Chè hạt sen" >
+        </div>
+        <div class="mySlides fade">
+       
+          <img src="../images/Slide/công viên nước.jpg" alt="Thiền viện Trúc Lâm Bạch Mã" >
+        </div>
+      </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot" onClick="currentSlide(0)"></span> 
+        <span class="dot" onClick="currentSlide(1)"></span> 
+        <span class="dot" onClick="currentSlide(2)"></span>
+        <span class="dot" onClick="currentSlide(3)"></span>
+        <span class="dot" onClick="currentSlide(4)"></span>    
+      </div>
+    
+    
+    <div id="table_form">
+    <form name="Góp ý" action="mailto:tamn0310@gmail.com" method="post">
+   	  <table width="600" border="0">
+  <tr>
+    <th colspan="2" scope="col"><h3 class="h3">Đóng góp ý kiến</h3></th>
+    </tr>
+  <tr>
+    <th width="189" align="right" class="text" scope="row">Họ và tên:</th>
+    <td width="395">
+      <input type="text" name="fullname" id="contact_form_fullname" size="20" maxlength="30"  placeholder="Nhập họ và tên" class="text_box"/>
+   </td>
+  </tr>
+  <tr>
+    <th align="right" class="text" scope="row">E-mail:</th>
+    <td><p>
+      <input type="email" name="e-mail" id="contact_form_mail" size="20" maxlength="30" placeholder="Nhập e-mail"  class="text_box"/>
+      &nbsp;</p></td>
+  </tr>
+  <tr>
+    <th align="right" valign="top" class="text" scope="row">Nội dung:</th>
+    <td>
+      <textarea name="message" id="contact_form_message" placeholder="Nhập nội dung" cols="45" ></textarea>
+    </td>
+  </tr>
+  <tr>
+    <th colspan="2" scope="col">
+    	<button type="submit" value="Gửi đi">Gửi đi</button>&nbsp;&nbsp;
+        <button type="reset" value="Nhập lại" >Nhập lại</button>
+    </th>
+  </tr>
+</table>
+</form>
+</div>
+
+<div id="top_footer">
+	<div id="left">
+    	<a href="Index.html">&larr;Về trang chủ</a>
+    </div>
+</div>
+
+<div id="footer">
+    	<div class="f_left">
+    		<ul>
+        		<li>Nguyễn Tâm&nbsp;&nbsp;Thành Đạt</li>
+            	<li>Bình Dương-Bình Thành-Hương Trà-Huế</li>
+            	<li>Liên hê:01659774543</li>
+        	</ul>       
+        </div>
+        <div class="f_right">
+        	<ul>
+            	<li>copyright &copy; 2018</li>
+                <li>Email:<a href="mailto:tamn0310@gmail.com">Tamn0310@gmail.com</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script>
+      //khai báo biến slideIndex đại diện cho slide hiện tại
+      var slideIndex;
+      // KHai bào hàm hiển thị slide
+      function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+
+          slides[slideIndex].style.display = "block";  
+          dots[slideIndex].className += " active";
+          //chuyển đến slide tiếp theo
+          slideIndex++;
+          //nếu đang ở slide cuối cùng thì chuyển về slide đầu
+          if (slideIndex > slides.length - 1) {
+            slideIndex = 0
+          }    
+          //tự động chuyển đổi slide sau 5s
+          setTimeout(showSlides, 4000);
+      }
+      //mặc định hiển thị slide đầu tiên 
+      showSlides(slideIndex = 0);
+
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+    </script>
+</html>
